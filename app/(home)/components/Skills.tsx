@@ -27,7 +27,7 @@ const Skills = () => {
   ];
 
   return (
-    <div className='max-w-5xl mx-auto px-8'>
+    <div className='max-w-5xl mx-auto mt-20 px-8'>
       <Title text='Skills 🧠' className='flex flex-col items-center justify-center -rotate-6' />
       <HoverEffect items={skills}></HoverEffect>
     </div>
