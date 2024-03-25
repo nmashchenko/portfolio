@@ -10,18 +10,18 @@ export const metadata: Metadata = {
 
   title: 'Nikita Mashchenko',
   authors: {
-    name: 'nmashchenko',
+    name: 'Nikita Mashchenko',
   },
 
   description:
-    "Based in Chicago, I'm a software engineer passionate about building a modern web application that users love.",
+    "I'm a software engineer passionate about building a modern web application that users love 🏗",
   openGraph: {
     title: 'Nikita Mashchenko',
     description:
-      "Based in Chicago, I'm a software engineer passionate about building a modern web application that users love.",
+      "I'm a software engineer passionate about building a modern web application that users love 🏗",
     url: 'https://mashchenko.tech',
     siteName: 'Nikita Mashchenko',
-    // images: '/og.png',
+    images: '/og.png',
     type: 'website',
   },
   keywords: ['web coding', 'nmashchenko', 'react', 'developer', 'ts', 'nextjs', 'tailwind'],
