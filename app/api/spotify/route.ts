@@ -28,7 +28,7 @@ const getAccessToken = async () => {
   return await response.json();
 };
 
-export const getNowPlaying = async () => {
+const getNowPlaying = async () => {
   const { access_token } = await getAccessToken();
 
   return fetch(NOW_PLAYING_ENDPOINT, {
