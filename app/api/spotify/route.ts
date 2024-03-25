@@ -22,9 +22,10 @@ const getAccessToken = async () => {
       grant_type: 'refresh_token',
       refresh_token,
     }),
+    cache: 'no-cache',
   });
 
-  return response.json();
+  return await response.json();
 };
 
 export const getNowPlaying = async () => {
@@ -58,7 +59,7 @@ export async function GET() {
   const songUrl = song.item.external_urls.spotify;
 
   return NextResponse.json({
-    album: album,
+    album,
     albumImageUrl,
     artist,
     isPlaying,

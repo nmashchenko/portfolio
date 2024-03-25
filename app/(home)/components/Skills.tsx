@@ -12,6 +12,7 @@ import {
   SiPostgresql,
   SiReact,
   SiTailwindcss,
+  SiTemporal,
 } from 'react-icons/si';
 
 const Skills = () => {
@@ -24,6 +25,7 @@ const Skills = () => {
     { text: 'Nest', Icon: SiNestjs },
     { text: 'Mongo', Icon: SiMongodb },
     { text: 'Jest', Icon: SiJest },
+    { text: 'Temporal', Icon: SiTemporal },
   ];
 
   return (
