@@ -19,11 +19,11 @@ export const metadata: Metadata = {
   },
 
   description:
-    "I'm a software engineer passionate about building a modern web application that users love 🏗",
+    "Software engineer focused on building modern, reliable products end to end, from infrastructure to user experience.",
   openGraph: {
     title: 'Nikita Mashchenko',
-    description:
-      "I'm a software engineer passionate about building a modern web application that users love 🏗",
+  description:
+    "Software engineer focused on building modern, reliable products end to end, from infrastructure to user experience.",
     url: 'https://mashchenko.dev',
     siteName: 'Nikita Mashchenko',
     images: '/og.png',
