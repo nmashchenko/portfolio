@@ -1,12 +1,17 @@
-import type { Metadata } from 'next';
-import { Space_Grotesk } from 'next/font/google';
-import './globals.css';
-import { ThemeProvider } from '@/components/theme-provider';
+import type React from "react"
+import type { Metadata } from "next"
+import { Geist } from "next/font/google"
+import "./globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
 
-const spaceGrotesk = Space_Grotesk({ subsets: ['latin'] });
+const geist = Geist({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-geist",
+})
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mashchenko.tech'),
+  metadataBase: new URL('https://mashchenko.dev'),
 
   title: 'Nikita Mashchenko',
   authors: {
@@ -19,7 +24,7 @@ export const metadata: Metadata = {
     title: 'Nikita Mashchenko',
     description:
       "I'm a software engineer passionate about building a modern web application that users love 🏗",
-    url: 'https://mashchenko.tech',
+    url: 'https://mashchenko.dev',
     siteName: 'Nikita Mashchenko',
     images: '/og.png',
     type: 'website',
@@ -30,15 +35,20 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
-    <html lang='en' suppressHydrationWarning>
-      <body className={spaceGrotesk.className}>
-        <ThemeProvider attribute='class' defaultTheme='dark' enableSystem disableTransitionOnChange>
+    <html lang="en" className={`${geist.variable}`} suppressHydrationWarning>
+      <body className="font-sans antialiased">
+        <ThemeProvider 
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+        >
           {children}
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }

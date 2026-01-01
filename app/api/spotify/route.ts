@@ -57,6 +57,7 @@ export async function GET() {
   const album = song.item.album.name;
   const albumImageUrl = song.item.album.images[0].url;
   const songUrl = song.item.external_urls.spotify;
+  const year = song.item.album.release_date ? new Date(song.item.album.release_date).getFullYear() : undefined
 
   return NextResponse.json({
     album,
@@ -65,5 +66,6 @@ export async function GET() {
     isPlaying,
     songUrl,
     title,
+    year
   });
 }
