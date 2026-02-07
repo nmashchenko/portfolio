@@ -2,7 +2,6 @@
 
 import { Spotify } from "@/components/spotify"
 import { Tooltip } from "@/components/ui/tooltip-card"
-import { TemirmaryCard } from '@/components/temirmary-card'
 import { useTheme } from "next-themes"
 import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
@@ -67,14 +66,6 @@ export default function Home() {
           <div className="grid lg:grid-cols-5 gap-12 sm:gap-16 w-full">
             <div className="lg:col-span-3 space-y-6 sm:space-y-8">
               <div className="space-y-3 sm:space-y-2">
-                <div  className="flex items-center p-1.5 gap-1 text-sm text-muted-foreground w-fit border rounded-md">
-                  Backed by 
-                  <Tooltip
-                    content={<TemirmaryCard />}
-                  >
-                    <span className="cursor-pointer font-bold">@temirmary</span>
-                  </Tooltip> ❤️
-                </div>
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight">
                   Nikita
                   <br />
@@ -278,7 +269,6 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 sm:gap-8">
             <div className="space-y-2">
               <div className="text-sm text-muted-foreground">© {currentYear} Nikita Mashchenko. All rights reserved.</div>
-              <div className="text-xs text-muted-foreground">❤️ My love <a href="https://www.instagram.com/temirmary">@temirmary</a></div>
             </div>
 
             <div className="flex items-center gap-4">
